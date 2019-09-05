@@ -15,7 +15,7 @@ const App = () => {
     const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${app_id}&app_key=${app_key}`);
     const data = await response.json();
     setRecipes(data.hits);
-    console.log(data.hits);
+    // console.log(data.hits);
   }
   useEffect(() => {
     getRecipes();
